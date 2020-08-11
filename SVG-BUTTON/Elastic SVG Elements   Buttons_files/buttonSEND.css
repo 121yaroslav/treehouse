@@ -1,0 +1,96 @@
+a {
+	text-decoration: none !important;
+}
+.button-wrap {
+	margin-bottom: 3em;
+}
+
+.buttonS {
+	background: none;
+	border: none;
+	/*height: 60px;*/
+	outline: none;
+	position: relative;
+	margin: 1em;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0 2.25%;
+
+
+}
+
+.button--round {
+	width: 150px;
+	height: 150px;
+}
+
+.button__textS {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+	color: #fff;
+	font: 1.2em "Open Sans Light", Arial, sans-serif;
+ 	line-height: 200%;
+ 	font-weight: 100;
+ 	padding: 14px 43%;
+
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.morph-shapeS {
+	position: absolute;
+	width: 110%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.button--line .morph-shapeS svg {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 4px;
+	stroke-linecap: round;
+}
+
+.button--line:nth-child(2) .morph-shapeS svg {
+	fill: #938edc;
+}
+
+.button--fillS .morph-shape svg {
+	fill: #00b88b;
+}
+
+.button--fillS:nth-child(4) .morph-shapeS svg {
+	fill: #202020;
+}
+
+.button--round .morph-shapeS svg {
+	stroke-width: 7px;
+}
+
+/* Example for effect */
+
+.button--anim-1 .button__textS {
+	-webkit-transition: -webkit-transform 0.15s;
+	transition: transform 0.15s;
+}
+
+.button--anim-1:active .button__textS {
+	-webkit-transform: translate3d(0, -5px, 0);
+	transform: translate3d(0, -5px, 0);
+}
